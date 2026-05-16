@@ -1,5 +1,6 @@
 ﻿namespace test;
 
+//комментарий
 class Test {
     static void Main(string[] args)
     {
