@@ -1,0 +1,14 @@
+C:\polytech\6sem\compilation\lab2\test\bin\Debug\net8.0\test.exe
+C:\polytech\6sem\compilation\lab2\test\bin\Debug\net8.0\test.deps.json
+C:\polytech\6sem\compilation\lab2\test\bin\Debug\net8.0\test.runtimeconfig.json
+C:\polytech\6sem\compilation\lab2\test\bin\Debug\net8.0\test.dll
+C:\polytech\6sem\compilation\lab2\test\bin\Debug\net8.0\test.pdb
+C:\polytech\6sem\compilation\lab2\test\obj\Debug\net8.0\test.GeneratedMSBuildEditorConfig.editorconfig
+C:\polytech\6sem\compilation\lab2\test\obj\Debug\net8.0\test.AssemblyInfoInputs.cache
+C:\polytech\6sem\compilation\lab2\test\obj\Debug\net8.0\test.AssemblyInfo.cs
+C:\polytech\6sem\compilation\lab2\test\obj\Debug\net8.0\test.csproj.CoreCompileInputs.cache
+C:\polytech\6sem\compilation\lab2\test\obj\Debug\net8.0\test.dll
+C:\polytech\6sem\compilation\lab2\test\obj\Debug\net8.0\refint\test.dll
+C:\polytech\6sem\compilation\lab2\test\obj\Debug\net8.0\test.pdb
+C:\polytech\6sem\compilation\lab2\test\obj\Debug\net8.0\test.genruntimeconfig.cache
+C:\polytech\6sem\compilation\lab2\test\obj\Debug\net8.0\ref\test.dll

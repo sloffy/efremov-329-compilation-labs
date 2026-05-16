@@ -1,0 +1,131 @@
+﻿@startuml
+skinparam linetype ortho
+skinparam nodesep 15
+skinparam ranksep 25
+skinparam rectangle {
+    BackgroundColor #2C3E50
+    BorderColor #1A252F
+    FontColor white
+    FontStyle bold
+    RoundCorner 8
+}
+skinparam node {
+    BackgroundColor #ECF0F1
+    BorderColor #3498DB
+    FontColor #2C3E50
+    RoundCorner 5
+}
+skinparam arrow {
+    Color #7F8C8D
+    Thickness 1
+}
+
+top to bottom direction
+
+rectangle "TaxiFleetManager" as Root
+
+' Уровень 1 - порядок слева направо: 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7
+node "1.1 Анализ требований" as L11
+node "1.2 Проектирование" as L12
+node "1.3 Разработка бэкенда" as L13
+node "1.4 Разработка фронтенда" as L14
+node "1.5 Тестирование" as L15
+node "1.6 Документирование" as L16
+node "1.7 Подготовка к релизу" as L17
+
+Root --> L11
+Root --> L12
+Root --> L13
+Root --> L14
+Root --> L15
+Root --> L16
+Root --> L17
+
+' Скрытые связи слева направо (1.1 -> 1.2 -> 1.3 -> ...)
+L11 -[hidden]right-> L12
+L12 -[hidden]right-> L13
+L13 -[hidden]right-> L14
+L14 -[hidden]right-> L15
+L15 -[hidden]right-> L16
+L16 -[hidden]right-> L17
+
+' Уровень 2 для 1.1
+node "1.1.1 Сбор и документирование\nтребований" as L111
+node "1.1.2 Спецификация API\nвнешних сервисов" as L112
+L11 --> L111
+L11 --> L112
+L111 -[hidden]down-> L112
+
+' Уровень 2 для 1.2
+node "1.2.1 Проектирование БД" as L121
+node "1.2.2 Архитектура сервиса\nавтоназначения" as L122
+node "1.2.3 Дизайн интерфейса" as L123
+L12 --> L121
+L12 --> L122
+L12 --> L123
+L121 -[hidden]down-> L122
+L122 -[hidden]down-> L123
+
+' Уровень 2 для 1.3
+node "1.3.1 Модуль заказов" as L131
+node "1.3.2 Модуль водителей" as L132
+node "1.3.3 Сервис распределения" as L133
+node "1.3.4 Сервис расчёта" as L134
+node "1.3.5 Платёжный шлюз" as L135
+node "1.3.6 API фронтенда" as L136
+L13 --> L131
+L13 --> L132
+L13 --> L133
+L13 --> L134
+L13 --> L135
+L13 --> L136
+L131 -[hidden]down-> L132
+L132 -[hidden]down-> L133
+L133 -[hidden]down-> L134
+L134 -[hidden]down-> L135
+L135 -[hidden]down-> L136
+
+' Уровень 2 для 1.4
+node "1.4.1 Интерфейс диспетчера" as L141
+node "1.4.2 Интерфейс водителя" as L142
+node "1.4.3 Интерфейс начальника\nавтоколонны" as L143
+L14 --> L141
+L14 --> L142
+L14 --> L143
+L141 -[hidden]down-> L142
+L142 -[hidden]down-> L143
+
+' Уровень 2 для 1.5
+node "1.5.1 Модульное тестирование" as L151
+node "1.5.2 Интеграционное\nтестирование" as L152
+node "1.5.3 UI и приёмочное" as L153
+node "1.5.4 Нагрузочное" as L154
+L15 --> L151
+L15 --> L152
+L15 --> L153
+L15 --> L154
+L151 -[hidden]down-> L152
+L152 -[hidden]down-> L153
+L153 -[hidden]down-> L154
+
+' Уровень 2 для 1.6
+node "1.6.1 Руководство\nадминистратора" as L161
+node "1.6.2 Руководство\nпользователя" as L162
+L16 --> L161
+L16 --> L162
+L161 -[hidden]down-> L162
+
+' Уровень 2 для 1.7
+node "1.7.1 Развертывание" as L171
+node "1.7.2 Загрузка данных" as L172
+node "1.7.3 Обучение персонала" as L173
+node "1.7.4 Запуск" as L174
+L17 --> L171
+L17 --> L172
+L17 --> L173
+L17 --> L174
+L171 -[hidden]down-> L172
+L172 -[hidden]down-> L173
+L173 -[hidden]down-> L174
+
+@enduml
