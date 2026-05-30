@@ -42,16 +42,6 @@ public class Lexer {
                 continue;
             }
 
-            // Комментарии //
-            if (current == '/' && i + 1 < code.length()
-                    && code.charAt(i + 1) == '/') {
-
-                while (i < code.length() && code.charAt(i) != '\n') {
-                    i++;
-                }
-                continue;
-            }
-
             // Строки
             if (current == '"') {
 

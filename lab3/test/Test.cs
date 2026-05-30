@@ -11,6 +11,7 @@
             bool flag = true;
 
             a = a + 1;
+            double ddwdw = a * b;
 
             if (a > 5)
             {
