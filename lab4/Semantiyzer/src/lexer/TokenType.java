@@ -1,0 +1,12 @@
+package lexer;
+
+public enum TokenType {
+    KEYWORD,
+    IDENTIFIER,
+    CONSTANT_INT,
+    CONSTANT_DOUBLE,
+    CONSTANT_STRING,
+    CONSTANT_BOOL,
+    OPERATOR,
+    DELIMITER
+}
